@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <title>Maquette</title>
     </head>
 
     <body>
@@ -24,9 +23,8 @@
              </nav>          
            
         </div>
-        </header>
-          
-          
+       
+    
 
         <div class="textehaut">
             <p>
@@ -35,12 +33,40 @@
             </p>
         </div>
                   
-            <div class="search">
-                    <div class="location"
-            <i class="fa-solid fa-location-dot"></i>
-              <input  type="text" placeholder="Marseille,France"> </div>      
-        </div>
+            <div id="search"> 
+                  <div id="search1">
+                   <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                <div id="search2">
+                  <input type="search" name="recherche" placeholder="Marseille,France">
+                </div>
+                <div id="search3">
+                <a href="#" class="bouton_bleu">Rechercher</a>
+                </div>
+                <div id="search4">
+                  <a href="#" class="fa-solid fa-magnifying-glass" style='color: #ffffff'></a>
+                </div>
+                </div>
 
+                  <div id="filtres">
+                  <h2>Filtres</h2>  
+                  <a href="#"><div id="economique">
+                      <i class="fa-solid fa-money-bill-wave"></i>
+                      <h3>Économique</h3> 
+                    </div></a>
+                    <a href="#"><div id="famille">
+                        <i class="fa-solid fa-child-reaching"></i>
+                      <h3>Famille</h3>  
+                    </div></a>
+                    <a href="#"><div id="romantique">  
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>Romantique</h3>  
+                    </div></a>
+                    <a href="#"><div id="animaux">
+                      <i class="fa-solid fa-dog"></i>  
+                      <h3>Animaux autorisés</h3> 
+                    </div></a>
+                </div>
                
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Economique')">Economique</button>
@@ -49,6 +75,11 @@
     <button class="tablinks" onclick="openCity(event, 'Animaux autorisés')">Animaux autorisés</button>
   </div>
   
+<aside id="infos">
+              <i class="fa-solid fa-info"></i>
+              <h3>Plus de 500 logements sont disponibles dans cette ville</h3> 
+              </aside> 
+</header>
 
   <section>
     
