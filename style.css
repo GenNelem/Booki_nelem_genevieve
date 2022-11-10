@@ -5,6 +5,10 @@ body
     margin-left: 0px;
 }
 
+ /*******************
+*** Styles header **
+********************/
+
 header
 {
     width:80%;
@@ -92,11 +96,43 @@ form
 {
     background: white;
     display: flex;
-}
+    outline: black;
+    }
+
+ form input{
+    flex: 1;
+    border: black;
+    outline: black;
+    }
+    form button{
+        background: darkblue;
+        padding: 10px 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+   form .fa-location-dot{
+    align-self: center;
+    padding: 10px 20px;
+    color: black;
+    
+
+    }
+    h4{
+        color: grey;
+    }
+
+    /*******************
+*** Styles main hebergements **
+********************/
 #maincontent
 {
     display: flex;
     background-color: beige;
+    margin-top: 20px;
 }
 
 .containerleft
@@ -164,3 +200,79 @@ form
     margin-left: 30px;
     margin-right: 30px;
 }
+
+/*******************
+*** Styles activites **
+********************/
+
+#activities {
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+  
+  #activities-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    height: 400px;
+  }
+  
+  #activities-list .card {
+    width: 22.5%;
+    flex: 0 0 22.5%;
+  }
+  
+  #activities-list .card-title {
+    padding: 5px 0px;
+  }
+  
+  #activities-list .card img {
+    width: auto;
+    height: 400px;
+  }
+
+  /*******************
+*** Styles Footer **
+********************/
+  
+footer {
+    background-color: #f2f2f2;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: auto;
+  }
+  
+  footer .footer-item {
+    flex: 1 1 auto;
+  }
+  
+  footer h3 {
+    font-weight: 800;
+  }
+  
+  footer .container ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  footer .container ul li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  
+  footer .container ul li a {
+    font-weight: 500;
+    font-size: 90%;
+    text-align: left;
+  }
