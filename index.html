@@ -3,81 +3,145 @@
     <head>
         <meta charset="utf-8" />
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <title>Maquette</title>
+            <title>Maquette</title>
+       
     </head>
 
     <body>
 
         <header>
 
-        <div class="header">
+            <div class="header">
 
-            <img src="images/bookilogo.svg" alt="logo" class="logo">
+             <img src="images/bookilogo.svg" alt="logo" class="logo">
              
-            <nav>
-                <ul>
-                    <li> <a class="active" href="#">Hébergements</a></li>
-                    <li> <a href="#">Activités</a></li>
+                <nav>
+                    <ul>
+                     <li> <a class="active" href="#">Hébergements</a></li>
+                     <li> <a href="#">Activités</a></li>
 
-                </ul>
-             </nav>          
+                    </ul>
+                 </nav>          
            
-        </div>
+            </div>
         </header>
           
           
-
-        <div class="textehaut">
+        
+        <div id="topcontent">
             <p>
-                <h3> Trouvez votre hébergement pour des vacances de rêves</h3>
+                <h3> Trouvez votre hébergement pour des vacances de rêve</h3>
                 <h4> En plein centre ville ou en pleine nature</h4>
             </p>
-        </div>
-                  
-            <div class="search">
-                    <div class="location"
-            <i class="fa-solid fa-location-dot"></i>
-              <input  type="text" placeholder="Marseille,France"> </div>      
-        </div>
 
-               
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Economique')">Economique</button>
-    <button class="tablinks" onclick="openCity(event, 'Familial')">Familial</button>
-    <button class="tablinks" onclick="openCity(event, 'Romantique')">Romantique</button>
-    <button class="tablinks" onclick="openCity(event, 'Animaux autorisés')">Animaux autorisés</button>
+            <div class="searchbar">
+                <form>
+                    <input type="text" placeholder="Marseille,France">
+                    <i class="fa-solid fa-location-dot" ></i>
+                    <button type="submit">Rechercher</button>
+                </form>
+                
+    
+   
   </div>
   
-
-  <section>
-    
-    <div class="container">
-
-         <div class="rangee1">
-            flex column 1
-            <div> <img src="images/cannebiere.jpg"></div>
-            <div> <img src="images/chezamina.jpg"></div>
-            <div> <img src="images/hotelduport.jpg"></div>
-        </div>
-
-        <div class="rangee2">
-            flex column 2
-            <div> <img  src="images/delamer.jpg"></div>
-            <div> <img src="images/lepanier.jpg"></div>
-            <div> <img src="images/mouettes.jpg"></div>
-        </div> </div>
-
-       <div class="container2">
-         <div class="rangee3">
-            flex column 3
-            <div> <img src="images/aside/chambredhotes.jpeg"></div>
-              <div> <img src="images/aside/soleildumatin.jpg"></div>
-             <div> <img src="images/aside/toutbleu.jpg"></div>
-        </div>
-    
-        </div>
+ 
             
+        <section id="maincontent">
+            
+                    <aside class="containerleft">
+                        <div class="rangee1">
+                            flex column 1
+                            <div> <img src="images/cannebiere.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                            <div> <img src="images/chezamina.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                            <div> <img src="images/hotelduport.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rangee2">
+                            flex column 2
+                            <div> <img  src="images/delamer.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                                
+                            <div> <img src="images/lepanier.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                            <div> <img src="images/mouettes.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div> 
+                         </div>
+                </aside>
+
+                <aside class="containerright">
+                    
+                    <div class="rangee3">
+                            flex column 3
+                            <div> <img src="images/aside/chambredhotes.jpeg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>  
+                                </div>
+                            </div>
+                            <div> <img src="images/aside/soleildumatin.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                            <div> <img src="images/aside/toutbleu.jpg">
+                                <div id="texte">
+                                    <p> hotel</p>
+                                    <p> nuit a partir de &euro;</p>
+                                </div>
+                            </div>
+                    
+                    </div>
+
+                </aside>
+                
+                    
+
+        </section>
+
+
+        <section id="bottomcontent">
+            
+        </section>
+            
+            
+
+         
+
+        <footer>
+            FOOTER
+        </footer>
+
+    
+
 
 
     
@@ -86,8 +150,6 @@
 
         
    
-        
-
-    
+            
     </body>
 </html>

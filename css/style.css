@@ -1,0 +1,9 @@
+#conteneur
+
+{
+    display: flex;
+    flex:justify;
+    order: 1;
+    border-radius: 20px/10px;
+    background-color: grey;
+}
