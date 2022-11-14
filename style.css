@@ -1,13 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    }
+
 body
 {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
+
 
  /*******************
 *** Styles header **
@@ -16,8 +19,7 @@ body
 header
 {
     width:80%;
-    margin: auto;
-   
+    margin: auto;  
 }
 
 header::after
@@ -30,12 +32,16 @@ header::after
 {
     float:left;
     padding: 10px;
-    margin-bottom: 30px;
-    margin-left: 0;
+    margin-bottom: 10px;
+    margin: auto;
 }
-nav
+
+header nav
 {
-    float:right
+    float:right;
+    margin-left: 1000px;
+    margin: auto;
+   
 }
 
 nav ul 
@@ -125,26 +131,48 @@ form
     
 
     }
+    p
+    {
+        margin: auto;
+    }
     h4{
         color: grey;
     }
 
 #searchcontainer
 {
-    margin-left: 200px;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1000px;
 
 }
 #searchbar
 {
-    margin-left: 200px;
-    margin-top: 100px;
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1000px
+
+}
+.fa-solid .fa-circle-info
+{
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1000px
+
 }
     
     /*******************
 *** Styles main hebergements **
 ********************/
+.hebergements
+{
+    display: flex;
+    display: inline-flex;
+    
+}
 .container
 {
     position: relative;
@@ -154,16 +182,21 @@ form
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    margin-top: 8%;
     background: lightgrey;
     border-radius: 20px;
+    column-gap: 10px;
+    margin: auto;
     margin-left: 200px;
+    margin-right: 50px;
+    margin-left: 90px;
+    margin-top: 30px;
+  
 }
 .container .card
 {
     width: 308px;
     position: relative;
-    height: 400px;
+    height: auto;
     background: white;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -198,27 +231,128 @@ form
     .container img
     {
         border-radius: 20px;
+
+    }
+    .stars
+    {
+        display: flex;
     }
     .fadedstar{
         color: lightgrey;
         display: flex;
     }
     .containerright
+    {
+    
+        position: relative;
+        width:auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        background: black;
+        border-radius: 20px;
+        column-gap: 10px;
+        margin: auto;
+        
+      
+        
+    }
+    
+    .containerright .card
+{
+    width: 308px;
+    position: relative;
+    height: auto;
+    background: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    border-radius: 20px;
+    margin-bottom: 0px;
+
+
+       
+}
+.containerright .card .imgBX
 {
     position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    margin-top: 8%;
-    background: lightgrey;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px black;
     border-radius: 20px;
-    float: right;
-    flex-direction: column;
+    }
+    .containerright .card .img
+    {
+        max-width: 100%;
+        border-radius: 20px;
+
+    }
+ 
+    .containerright img
+    {
+        border-radius: 20px;
+
+    }
+ /*******************
+*** Activites **
+********************/
+.containerbottom
+{
     
+    row-gap: 30px;
+    column-gap: 30px;
+    height: 400px;
+    background: blueviolet;
+    position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+       
+        border-radius: 20px;
+        column-gap: 10px;
+        margin: auto;
+        margin-left: 200px;
+        margin-right: 50px;
+        margin-left: 90px;
+        margin-top: 30px;
 }
+#column1 img
+{
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    flex: 0 0 22.5%;
+
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*******************
 *** Styles Footer **
 ********************/
