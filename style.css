@@ -4,8 +4,8 @@ body
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 0px;
-    width: 100%;
-    min-height: 100vh;
+    width: 2022px;
+    height: 1620.280px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -41,7 +41,6 @@ header nav
     float:right;
     margin-left: 1000px;
     margin: auto;
-   
 }
 
 nav ul 
@@ -55,19 +54,16 @@ nav li{
     margin-left: 70px;
     margin-right: 35px;
     padding-top: 25px;
-    position:relative;
-       
+    position:relative;   
 }
 
 nav ul li > a {
     color: darkgrey;
     text-decoration:none;
     text-transform:lowercase;
-    font-size: larger;
-       
+    font-size: larger;     
 }
-
-    
+  
 nav a:hover
 {
     color: blue;
@@ -88,13 +84,11 @@ nav a::before
 
 nav a:hover::before{
     width: 100%;
-
 }
 #topcontent
 {
     margin-left: 200px;
     margin-bottom: 30px;
-
 }
 .searchbar
 {
@@ -128,16 +122,18 @@ form
     align-self: center;
     padding: 10px 20px;
     color: black;
-    
-
     }
     p
     {
-        margin: auto;
+        margin-left: 0px;
+        margin-top: 50px;
     }
     h4{
         color: grey;
     }
+     /*******************
+*** Search bar and Filtres **
+********************/
 
 #searchcontainer
 {
@@ -163,7 +159,40 @@ form
     max-width: 1000px
 
 }
-    
+    .buttonrecherche
+    {
+        display: flex;
+    }
+
+button{
+    border-radius: 35px;
+    border-color:grey;
+    background-color: white;
+    padding: 0px;
+    transition: color 0.4s linear;
+}
+
+button:hover {
+    cursor:pointer;
+    transition:ease-in-out;
+    background-color: lightcyan;
+    color: blue;
+}
+
+.buttonrecherche .fa-solid 
+{
+border: none;
+border-radius: 360px;
+padding: 10px;
+background-color: lightblue;
+}
+
+
+
+
+
+
+
     /*******************
 *** Styles main hebergements **
 ********************/
@@ -171,6 +200,7 @@ form
 {
     display: flex;
     display: inline-flex;
+   
     
 }
 .container
@@ -255,9 +285,7 @@ form
         background: black;
         border-radius: 20px;
         column-gap: 10px;
-        margin: auto;
-        
-      
+        margin-left: 0px;    
         
     }
     
@@ -274,8 +302,6 @@ form
     margin-top: 5%;
     border-radius: 20px;
     margin-bottom: 0px;
-
-
        
 }
 .containerright .card .imgBX
@@ -305,54 +331,47 @@ form
 ********************/
 .containerbottom
 {
-    
     row-gap: 30px;
     column-gap: 30px;
     height: 400px;
     background: blueviolet;
     position: relative;
-        width: 1100px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 30px;
-       
-        border-radius: 20px;
-        column-gap: 10px;
-        margin: auto;
-        margin-left: 200px;
-        margin-right: 50px;
-        margin-left: 90px;
-        margin-top: 30px;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px;
+    column-gap: 10px;
+    margin: auto;
+  
 }
 #column1 img
 {
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
+   
     flex: 0 0 22.5%;
 
-
-   
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#column2 img
+{
+    border-radius: 15px;
+}
+#column3 img
+{
+    
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+}
+#column4 img
+{
+    border-radius: 15px;
+}
   /*******************
 *** Styles Footer **
 ********************/
