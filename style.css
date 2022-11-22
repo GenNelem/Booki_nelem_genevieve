@@ -1,198 +1,167 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800;900&display=swap');
+
+body
+
+/*wildcard*/
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
+}
+
 body
 {
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 0px;
-    width: 2022px;
+    margin-left: 30px;
+    width: 2000px;
     height: 1620.280px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-
  /*******************
 *** Styles header **
 ********************/
-
-header
-{
-    width:80%;
-    margin: auto;  
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;  
 }
-
-header::after
-{
-    content: '';
-    display: table;
-    clear: both;
+nav a{
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 50px;
 }
-.logo
-{
-    float:left;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin: auto;
-}
-
-header nav
-{
-    float:right;
-    margin-left: 1000px;
-    margin: auto;
-}
-
-nav ul 
-{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    margin-right: 35px;
-    padding-top: 25px;
-    position:relative;   
-}
-
-nav ul li > a {
-    color: darkgrey;
-    text-decoration:none;
-    text-transform:lowercase;
-    font-size: larger;     
-}
-  
 nav a:hover
 {
-    color: blue;
-  
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+.logo{
+    
+    margin-right: auto;
+    padding: 0px 2rem 0px 2rem;
 }
 
-nav a::before
+     /*******************
+*** Search bar **
+********************/
+.Wrapper {
+    padding: 0 2rem;
+}
+.searchcontainer
 {
-    content:'' ;
-    display:block;
-    height: 5px;
-    width: 0px;
-    background-color: #444;
-    top:0;
-    position: absolute;
-
-}
-
-nav a:hover::before{
+    margin-left: 0px;
+    padding: 30px;
     width: 100%;
-}
-#topcontent
-{
-    margin-left: 200px;
-    margin-bottom: 30px;
+    max-width: 1000px;
+    
 }
 .searchbar
 {
-     background: white;
-    display: flex;
-    
-}
-form
-{
-    background: white;
-    display: flex;
-    outline: black;
-    }
-
- form input{
-    flex: 1;
-    border: black;
-    outline: black;
-    }
-    form button{
-        background: darkblue;
-        padding: 10px 50px;
-        border: none;
-        outline: none;
-        color: #fff;
-        letter-spacing: 1px;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-   form .fa-location-dot{
-    align-self: center;
-    padding: 10px 20px;
-    color: black;
-    }
-    p
-    {
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-    h4{
-        color: grey;
-    }
-     /*******************
-*** Search bar and Filtres **
-********************/
-
-#searchcontainer
-{
     margin: auto;
-    padding: 0 30px;
     width: 100%;
     max-width: 1000px;
-
 }
-#searchbar
+
+.searchbar
 {
-    margin: auto;
-    padding: 0 30px;
-    width: 100%;
-    max-width: 1000px
-
+    display: flex;   
 }
-.fa-solid .fa-circle-info
-{
-    margin: auto;
-    padding: 0 30px;
-    width: 100%;
-    max-width: 1000px
-
+.searchbar i{
+    padding: 1rem 2rem;
+    background-color: lightgrey;
+    border-radius: 1rem 0 0 1rem;
 }
-    .buttonrecherche
-    {
-        display: flex;
-    }
-
-button{
-    border-radius: 35px;
-    border-color:grey;
-    background-color: white;
-    padding: 0px;
-    transition: color 0.4s linear;
+.searchbar input{
+    padding-right: 3rem;
+}
+.searchbar button{
+    background-color:#0065fc;
+    border-radius: 0rem 1rem 1rem 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0 1.5rem;
+   transition: transform 200ms;  
+}
+.searchbar button:hover{
+    opacity: 0.8;
+    transform: scale(1.03);
 }
 
-button:hover {
-    cursor:pointer;
-    transition:ease-in-out;
-    background-color: lightcyan;
+  /*******************
+***  Filtres **
+********************/
+
+.fa-solid.fa-money-bill-wave{
+color: blue;
+background-color: #DEEBFF;
+padding: 1rem;
+border-radius: 50%;
+margin: -3px;
+}
+
+.fa-solid.fa-child-reaching{
+color: blue;
+background-color: #DEEBFF;
+padding: 1rem;
+border-radius: 50%;
+margin: -3px;
+}
+
+.fa-solid.fa-heart{
     color: blue;
+    background-color: #DEEBFF;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -3px;
 }
 
-.buttonrecherche .fa-solid 
+.fa-solid.fa-dog{ 
+    color:blue;
+    background-color: #DEEBFF;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -3px;
+}
+
+.filtres span {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.filtresliste{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filtres{
+    border: 2px solid lightgrey;
+    border-radius: 2rem; 
+    transition: all 200ms ease-in-out;
+}
+.filtres:hover{
+    background-color: #F3F8FF;
+    transform: scale(1.02);
+}
+.filtres1
 {
-border: none;
-border-radius: 360px;
-padding: 10px;
-background-color: lightblue;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
 }
-
-
-
-
-
-
-
+.logements{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
     /*******************
 *** Styles main hebergements **
 ********************/
@@ -200,13 +169,13 @@ background-color: lightblue;
 {
     display: flex;
     display: inline-flex;
-   
-    
+    border: solid;
+    margin-bottom: 30px;
 }
-.container
+.hebergements .container
 {
     position: relative;
-    width: 1100px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,12 +184,12 @@ background-color: lightblue;
     background: lightgrey;
     border-radius: 20px;
     column-gap: 10px;
-    margin: auto;
-    margin-left: 200px;
     margin-right: 50px;
     margin-left: 90px;
     margin-top: 30px;
-  
+    margin-bottom: 30px;
+    border: solid;
+    border-color: red;
 }
 .container .card
 {
@@ -228,7 +197,6 @@ background-color: lightblue;
     position: relative;
     height: auto;
     background: white;
-    margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -236,6 +204,7 @@ background-color: lightblue;
     margin-top: 5%;
     border-radius: 20px;
     margin-bottom: 0px;
+    margin-left: 30px;
    
 }
 .container .card .imgBX
@@ -252,7 +221,6 @@ background-color: lightblue;
     {
         max-width: 100%;
         border-radius: 20px;
-
     }
     .imgBx:hover img
     {
@@ -274,7 +242,6 @@ background-color: lightblue;
     .containerright
     {
     
-        position: relative;
         width:auto;
         display: flex;
         justify-content: center;
@@ -282,11 +249,14 @@ background-color: lightblue;
         align-items: center;
         flex-wrap: wrap;
         padding: 30px;
-        background: black;
+        background: pink;
         border-radius: 20px;
         column-gap: 10px;
-        margin-left: 0px;    
-        
+        margin-top: 30px; 
+        margin-bottom: 30px;   
+        border: solid;
+        border-color: green;
+       
     }
     
     .containerright .card
@@ -311,73 +281,64 @@ background-color: lightblue;
     height: 260px;
     top: -60px;
     left: 20px;
-    box-shadow: 0 5px 20px black;
+    box-shadow: 0 5px 20px white;
     border-radius: 20px;
     }
     .containerright .card .img
     {
         max-width: 100%;
         border-radius: 20px;
-
     }
  
     .containerright img
     {
         border-radius: 20px;
-
     }
  /*******************
 *** Activites **
 ********************/
-.containerbottom
-{
-    row-gap: 30px;
-    column-gap: 30px;
-    height: 400px;
-    background: blueviolet;
-    position: relative;
-    width:90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    border-radius: 20px;
-    column-gap: 10px;
-    margin: auto;
-  
-}
-#column1 img
-{
-    border-radius: 15px;
-    width: 300px;
-    height: 500px;
-   
-    flex: 0 0 22.5%;
+.activities-list{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns:auto-fit;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin-bottom: 20vh;
+    grid-gap: 5rem;
 
 }
-#column2 img
-{
-    border-radius: 15px;
+
+.activities-list >*{
+    border: 1px solid yellow;
 }
-#column3 img
-{
-    
-    width: 300px;
-    height: 500px;
-    border-radius: 15px;
+.big{
+    grid-row: 1/4;
 }
-#column4 img
-{
-    border-radius: 15px;
+.big2{
+    grid-column: 3/4;
 }
+.medium
+{
+    grid-row: span 2;
+}
+.small1
+{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+
   /*******************
 *** Styles Footer **
 ********************/
   
 footer {
     background-color: #f2f2f2;
+    border: solid;
+    border-color: chartreuse;
+    margin-top: 30px;
+    margin-left: 50px;  
+    align-items: center;
+    
   }
   
   footer .container {
@@ -416,4 +377,4 @@ footer {
     text-align: left;
     text-decoration: none;
     color: black;
-  }
+}

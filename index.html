@@ -2,65 +2,69 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link href="style.css" rel="stylesheet">
         <title>Maquette</title>
         <script src="https://kit.fontawesome.com/7b28bdee37.js" crossorigin="anonymous"></script>
-       
-    </head>
+        <script src="https://kit.fontawesome.com/7b28bdee37.js" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+      </head>
 
     <body>
 
-        <header>
+      <header>
 
-            <div class="header">
+          <div class="header">
 
-             <img src="images/bookilogo.svg" alt="logo" class="logo">
-             
-                <nav>
-                    <ul>
-                     <li> <a class="active" href="#">Hébergements</a></li>
-                     <li> <a href="#">Activités</a></li>
-
-                    </ul>
-                 </nav>          
+            <nav>
+              <img src="images/bookilogo.svg" alt="logo" class="logo">
+                <div class="subnav">
+                  <a href="">hébergements</a>
+                  <a href="">Activités</a>
+                </div>
+            </nav>          
            
             </div>
-        </header>
+      </header>
 
 
+          <!--SEARCH-->
+        <section class="searchcontainer">
           
-        <section id="searchcontainer">
-            <p>
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h3>
-                <h4> En plein centre ville ou en pleine nature</h4>
-            </p>
+          <main class="wrapper">
+            <!--HEADINGS -->
+            <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p><h4> En plein centre ville ou en pleine nature</h4></p>
+          </main>
+             
+          <div class="searchbar">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Marseille,France">
+            <button type="submit">Rechercher</button>
+          </div>
 
-            <div class="searchbar">
-                <form>
-                
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Marseille,France">
-                    <button type="submit">Rechercher</button>
-                </form>
-            </div>  
-     
         </section>
           
+    
+  <!--FILTRES-->
+  <div class="filtresliste">
+    <h1>Filtres</h1>
+    <div class="filtres1">
+      <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><span>Economique </span></div>
+      <div class="filtres"><i class="fa-solid fa-child-reaching"></i><span>Familial</span></div>
+      <div class="filtres"><i class="fa-solid fa-heart"></i><span>Romantique</span></div>
+      <div class="filtres"><i class="fa-solid fa-dog"></i><span>Animaux autorisés</span></div>
+    </div>
+  </div>
+  
+     
         
-           
-        
+     <div class="logements">
+     <div class="logements"> <i class="fa-solid fa-circle-info"></i></div>
+      <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
+     </div> 
 
 
-        <i class="fa-solid fa-circle-info"></i><h4>Plus de 500 logements sont disponibles dans cette ville</h4>
-        
 
-      <div class="buttonrecherche">
-        <div class="button1"><button><i class="fa-solid fa-money-bill-wave"></i>Economique</button></div>
-        <div class="button2"><button><i class="fa-solid fa-child-reaching"></i>Familial</button></div>
-        <div class="button3"><button><i class="fa-solid fa-heart"></i>Romantique</button></div>
-        <div class="button4"><button><i class="fa-solid fa-dog"></i>Animaux autorisés</button></div>
-      </div>
-        
+
 
       <div class="hebergements">
         <div class="container">
@@ -220,78 +224,27 @@
      <section class="containerbottom">
 
       <h3> Activites a Marseille</h3>
-
-    <div id="column1">
-      <div class="card">
-        <div class="imgBx">
-          <a href="#"><img src="images/Bottom/vieuxport.jpeg"></a>
-            <h2>Vieux Port</h2>
-        </div>
+      <div  class="activities-list">
+        <div class="big big1"> big1</div>
+        <div class="medium medium1">medium1</div>
+        <div class="small small1">small1</div>
+        <div class="big big2">big2</div>
+        <div class="small small2">small2</div>
+        <div class="medium medium2">medium2</div>
       </div>
-    </div>
-
-    <div id="column2">
-        <div class="card">
-          <div class="imgBx">
-            <a href="#"><img src="images/Bottom/pomegues.jpeg"></a>
-              <h2>Fort de pomegues</h2>
-          </div>
-        </div>
-   
-          
-   
-        <div class="card">
-          <div class="imgBx">
-            <a href="#"><img src="images/Bottom/frioul.jpeg"></a>
-              <h2>îles du Friol</h2>
-          </div>
-        </div>
-    </div>
-
-    <div id="column3">
-        <div class="card">
-          <div class="imgBx">
-            <a href="#"><img src="images/Bottom/parcnational.jpeg"></a>
-              <h2>Parc National des Calanques</h2>
-          </div>
-        </div>
-    </div>
-    
-    <div id="column2">        
-        <div class="card">
-          <div class="imgBx">
-            <a href="#"><img src="images/Bottom/notredame.jpeg"></a>
-              <h2>Notre-Dame-de-la-Garde</h2>
-          </div>
-        </div>
-    
-    
-
-        <div class="card">
-          <div class="imgBx">
-            <a href="#"><img src="images/Bottom/longchamp.jpeg"></a>
-              <h2>Parc Longchamp</h2>
-          </div>
-        </div>
-    </div>
-
-  </div>
-
-    
-     </section>
-      
-
-      
-
-
-      
-
-
-  
-
 
      </section>
-    
+      
+
+
+
+
+
+
+
+
+
+
 
 
       
