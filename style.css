@@ -1,14 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800;900&display=swap');
-
-body
-
 /*wildcard*/
 *{
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
 }
-
 body
 {
     background-color: white;
@@ -47,7 +43,7 @@ nav a:hover
     padding: 0px 2rem 0px 2rem;
 }
 
-     /*******************
+ /*******************
 *** Search bar **
 ********************/
 .Wrapper {
@@ -162,119 +158,165 @@ margin: -3px;
     align-items: center;
     padding: 30px;
 }
-    /*******************
-*** Styles main hebergements **
-********************/
-.hebergements{
-    display: flex;
-    gap: 1rem;
-}
-    /*******************
-*** HEBERGEMENTS A MARSEILLE **
-********************/
-.hebergements> div{
-border: 5px solid purple;
-background-color:#f2f2f2;
-padding: 1rem;
-border-radius: 1rem;
-}
-.containerleft{
-    flex-basis: 66%;
-
-}
-.containerleft a{
-    font-weight: bold;
-    text-decoration: none;
-    
-}
-
-.containerleftliste div{
-    border: 2px solid blue;
-    flex-basis: 33%;
-    
-
-}
-
-.containerleftliste{
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
-
 
    /*******************
-*** POPULAIRES **
+*** HEBERGEMENTS **
 ********************/
-.populaires{
-    flex-basis: 33%;
+.flexAround
+{
     display: flex;
-    flex-direction: column;
-   
 }
-.populairesliste{
-    gap: 5rem;
+.sizeHebergements
+{   flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color:burlywood;  
     border: 1px solid red;
-   
+    margin-bottom: 1rem;
 }
-.populairesliste div{
-    border: 2px solid burlywood;
-
-}
-
-.populaires h3{
+.sizeHebergements h3{
     flex-basis: 100%;
 }
-@media(max-width:800px){
-    .populaires{
-        flex-direction: row;
-    }
+.containerleft{
+    border: 5px solid fuchsia;
+    flex-direction: column;
+}
+
+.imgHergements
+{
+border: 3px solid red;
+}
+.imgHergements div{
+    border: 2px solid greenyellow;
+}
+.imgHergements .stars
+{
+    color: #0065fc;
+}
+
+.sizeHebergements a{
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
 }
 
 
-@media(max-width:800px){
-    .hebergements{
-        flex-direction: column;
-    }
-    .populaires{
-        order: -1;
-    }
+
+
+
+
+
+
+
+
+.containerleft
+{
+    display: flex;
+    display: inline-flex;
+    border: solid;
+    margin-bottom: 30px;
+   
+   
 }
- 
- /*******************
-*** Activites **
+.containerleft .container
+{
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: lightgrey;
+    border-radius: 20px;
+    column-gap: 10px;
+    margin-right: 50px;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid;
+    border-color: red;
+  
+}
+.container .card
+{
+    width: 308px;
+    position: relative;
+    height: auto;
+    background: white;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+   
+}
+.container .card .imgBX
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px black;
+    border-radius: 20px;
+    }
+    .container .card .img
+    {
+        max-width: 100%;
+        border-radius: 20px;
+
+    }
+    .imgBx:hover img
+    {
+        transform:scale(1.1) ;
+    }
+    .container img
+    {
+        border-radius: 20px;
+
+    }
+    .stars
+    {
+        display: flex;
+    }
+    .fadedstar{
+        color: lightgrey;
+        display: flex;
+    }
+
+      /*******************
+*** POPULAIRES **
 ********************/
-.activities-list{
-    display: grid;
-    background-color: aqua;
-    grid-template-columns:auto-fit;
-    grid-template-rows: 1fr 2fr 1fr;
-    margin-bottom: 20vh;
-    grid-gap: 5rem;
 
-}
+    .sizePopulaires
+    {
+    flex: 1;
+    flex-direction: row;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: pink;
+    
+    }
+    .imgPopulaires{
+        border: 3px solid blue;
+    }
+    .imgPopulaires div
+    {
+        border: 2px solid green;
+    }
+    .stars
+    {
+        display: flex;
+    }
+   
 
-.activities-list >*{
-    border: 1px solid yellow;
-}
-.big{
-    grid-row: 1/4;
-}
-.big2{
-    grid-column: 3/4;
-}
-.medium
-{
-    grid-row: span 2;
-}
-.small1
-{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-
+    
   /*******************
 *** Styles Footer **
 ********************/
