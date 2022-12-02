@@ -159,164 +159,147 @@ margin: -3px;
     padding: 30px;
 }
 
-   /*******************
+/*******************
 *** HEBERGEMENTS **
 ********************/
+
 .flexAround
 {
     display: flex;
+    justify-content: space-around;
+    border: 10px solid red;
+    width: fit-content;
+    height:100%;
+    width: fit-content;
 }
-.sizeHebergements
-{   flex: 2;
-    height: 650px;
-    margin-right: 20px;
-    border-radius: 10px;
-    background-color:burlywood;  
-    border: 1px solid red;
-    margin-bottom: 1rem;
-}
-.sizeHebergements h3{
-    flex-basis: 100%;
-}
-.containerleft{
-    border: 5px solid fuchsia;
-    flex-direction: column;
-}
-
-.imgHergements
-{
-border: 3px solid red;
-}
-.imgHergements div{
-    border: 2px solid greenyellow;
-}
-.imgHergements .stars
-{
-    color: #0065fc;
-}
-
-.sizeHebergements a{
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-.containerleft
-{
-    display: flex;
-    display: inline-flex;
-    border: solid;
-    margin-bottom: 30px;
-   
-   
-}
-.containerleft .container
-{
-    position: relative;
-    width: auto;
+.flexcolumncentre{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    background: lightgrey;
-    border-radius: 20px;
-    column-gap: 10px;
-    margin-right: 50px;
-    margin-left: 90px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: solid;
-    border-color: red;
-  
-}
-.container .card
-{
-    width: 308px;
-    position: relative;
-    height: auto;
-    background: white;
-    padding: 20px 15px;
-    display: flex;
     flex-direction: column;
-    transition: 0.3s ease-in-out;
-    margin-top: 5%;
-    border-radius: 20px;
-    margin-bottom: 0px;
-    margin-left: 30px;
-   
-}
-.container .card .imgBX
+
+} 
+.flexcolumnaround
 {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    box-shadow: 0 5px 20px black;
-    border-radius: 20px;
-    }
-    .container .card .img
-    {
-        max-width: 100%;
-        border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.flexcolumnbetween{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
-    }
-    .imgBx:hover img
-    {
-        transform:scale(1.1) ;
-    }
-    .container img
-    {
-        border-radius: 20px;
+.sizehebergements
+{   
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px; 
+    border: 6px solid blue;
+    margin-bottom: 1rem;
+    background-color: #f2f2f2;
+}
+.blochebergements{
+    padding: 20px;
+    padding-right: 20px ;
+}
+.imghebergements1{
+background-image: url("images/cannebiere.jpg" );
+width: 100%;
+height: 120px;
+background-size: cover;
+background-position: center;
+border-radius: 1rem 1rem 0 0;
+}
+.imghebergements2{
+    background-image: url("images/hotelduport.jpg" );
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.imghebergements3{
+    background-image: url("images/mouettes.jpg" );
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.imghebergements4{
+    background-image: url("images/delamer.jpg" );
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.imghebergements5{
+    background-image: url("images/lepanier.jpg" );
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.imghebergements6{
+    background-image: url("images/chezamina.jpg" );
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
 
-    }
-    .stars
-    {
-        display: flex;
-    }
-    .fadedstar{
-        color: lightgrey;
-        display: flex;
-    }
+/**POPULAIRES **/
 
-      /*******************
-*** POPULAIRES **
-********************/
-
-    .sizePopulaires
+    .sizepopulaires
     {
     flex: 1;
     flex-direction: row;
-    height: 650px;
+    height: 650px ;
     margin-left: 20px;
     border-radius: 10px;
     background-color: pink;
+    border: solid 10px black;
     
     }
-    .imgPopulaires{
-        border: 3px solid blue;
-    }
-    .imgPopulaires div
-    {
-        border: 2px solid green;
-    }
-    .stars
-    {
-        display: flex;
-    }
-   
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
     
+  /*******************
+*** ACTIVITES 
+********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*******************
 *** Styles Footer **
 ********************/
