@@ -9,7 +9,7 @@ body
 {
     background-color: white;
     margin-left: 30px;
-    width: 2000px;
+    width: 100%;
     height: 1620.280px;
     display: flex;
     flex-direction: column;
@@ -167,19 +167,20 @@ margin: -3px;
 {
     display: flex;
     gap: 3rem;
-    border: 10px solid greenyellow;
-    width: fit-content;
+    width: auto;
 }
 .apartements-liste > div{
-border: 1px solid red;
-padding: 1rem;
+padding: 3rem;
 border-radius: 1rem;
+flex-wrap: wrap;
+
 
 }
 
 .city
 {   
     flex-basis: 66%;
+    background-color: #f2f2f2;
 }
 .city a{
     font-weight: bold;
@@ -192,6 +193,8 @@ border-radius: 1rem;
     gap: 1rem;
     justify-content: space-around;
     margin-bottom: 1rem;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
 }
 .city-apartements-liste div{
     flex-basis: 30%;
@@ -205,12 +208,13 @@ border-radius: 1rem;
 }
 .appartements-card{
     background-color: white;
-    border: 3px solid purple;
     border-radius: 1rem;
     padding: 0.5rem;
     box-shadow: 0 0 10px;
     flex-grow: 1;
-   
+}
+.appartements-card:hover{
+    transform: scale(1.1);
 }
 
 .appartements-card img{
@@ -225,6 +229,9 @@ border-radius: 1rem;
 }
 /**POPULAIRES **/
 
+   .populaires{
+    background-color: #f2f2f2;
+   }
    .apartements-liste .populaires-flex
     {display: flex;
    flex: 33%;
@@ -232,21 +239,24 @@ border-radius: 1rem;
    gap: 1rem;
    flex-wrap: wrap;
    background-color: #f2f2f2;
-
+  
     }
     .populaires-flex div{
-        border: 1px solid green;
-        width: fit-content;
+ 
+        width: auto;
     }
     .popular-appartements-card
     { display: flex;
-        border-radius: 2rem;
+        border-radius: 1rem;
         background-color: white;
         box-shadow:0 0 0 rem ;
 
     }
     .popular-appartements-card img{
         height: 10rem;
+    }
+    .popular-appartements-card img:hover{
+        transform: scale(1.1);
     }
       
     .populaires-description{
@@ -256,15 +266,13 @@ border-radius: 1rem;
     }
     .populaires-description h3{
         margin: 0 auto;
+        
     }
     .populaires-description .stars
     {
         margin-top: 4rem;
         margin-bottom: 0;
-    }
-  
-       
-    
+    } 
 @media (max-width:800px){
     .apartements-liste{
         flex-direction: column;
@@ -273,78 +281,94 @@ border-radius: 1rem;
     {
         order: -1;
     }
+    .appartements-card{
+        flex-direction: row;
     }
-    @media (max-width:800px){
-        .apartements-liste .populaires{
+    .apartements-liste .populaires{
             flex-direction: row  ;
+            background-color: pink;
         }
     }
     
-  /*******************
-*** ACTIVITES 
-********************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*******************
-*** Styles Footer **
-********************/
-  
-footer {
-    background-color: #f2f2f2;
-    border: solid;
-    border-color: chartreuse;
-    margin-top: 30px;
-    margin-left: 50px;  
-    align-items: center;
     
-  }
-  
-  footer .container {
+/************************************
+*            Activités              *
+************************************/
+
+.activite {
+    margin-bottom: 60px;
+    ;
+}
+
+.activite-list {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    overflow: auto;
-  }
-  
-  footer .footer-item {
-    flex: 1 1 auto;
-    margin-left: 100px;
-  }
-  
-  footer h3 {
-    font-weight: 800;
-  }
-  
-  footer .container ul {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-  }
-  
-  footer .container ul li {
-    margin-bottom: 10px;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  footer .container ul li a {
-    font-weight: 500;
-    font-size: 90%;
-    text-align: left;
-    text-decoration: none;
-    color: black;
+    height: 600px;
+    margin: 0 2rem 0 2rem;
 }
+
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.activite-list img:hover{
+    transform: scale(1.1);
+
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+
+/************************************
+*              Footer               *
+************************************/
+
+footer {
+    background-color: #f2f2f2;
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+    
+    
+  
