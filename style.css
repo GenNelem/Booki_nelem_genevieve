@@ -10,7 +10,7 @@ body
     background-color: white;
     margin-left: 30px;
     width: 100%;
-    height: 1620.280px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -62,12 +62,9 @@ nav a:hover
     margin: auto;
     width: 100%;
     max-width: 1000px;
+    display: flex;
 }
 
-.searchbar
-{
-    display: flex;   
-}
 .searchbar i{
     padding: 1rem 2rem;
     background-color: lightgrey;
@@ -173,10 +170,7 @@ margin: -3px;
 padding: 3rem;
 border-radius: 1rem;
 flex-wrap: wrap;
-
-
 }
-
 .city
 {   
     flex-basis: 66%;
@@ -198,7 +192,6 @@ flex-wrap: wrap;
 }
 .city-apartements-liste div{
     flex-basis: 30%;
- 
 }
 .city-apartements-liste .lightstar{
     color:lightgrey;
@@ -216,7 +209,6 @@ flex-wrap: wrap;
 .appartements-card:hover{
     transform: scale(1.1);
 }
-
 .appartements-card img{
     border-radius: 1rem 1rem 0 0;
     height: 10rem;
@@ -239,7 +231,6 @@ flex-wrap: wrap;
    gap: 1rem;
    flex-wrap: wrap;
    background-color: #f2f2f2;
-  
     }
     .populaires-flex div{
  
@@ -250,7 +241,6 @@ flex-wrap: wrap;
         border-radius: 1rem;
         background-color: white;
         box-shadow:0 0 0 rem ;
-
     }
     .popular-appartements-card img{
         height: 10rem;
@@ -258,15 +248,13 @@ flex-wrap: wrap;
     .popular-appartements-card img:hover{
         transform: scale(1.1);
     }
-      
     .populaires-description{
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
     }
     .populaires-description h3{
-        margin: 0 auto;
-        
+        margin: 0 auto;   
     }
     .populaires-description .stars
     {
@@ -289,25 +277,19 @@ flex-wrap: wrap;
             background-color: pink;
         }
     }
-    
-    
 /************************************
 *            Activités              *
 ************************************/
-
 .activite {
     margin-bottom: 60px;
     ;
 }
-
 .activite-list {
     display: flex;
     justify-content: space-between;
     height: 600px;
     margin: 0 2rem 0 2rem;
 }
-
-
 .activite-list .column {
     width: 23%;
     display: flex;
@@ -315,7 +297,6 @@ flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 25px;
 }
-
 .activite-list .column article img {
     width: 100%;
     height: calc(100% - 67px);
@@ -324,45 +305,35 @@ flex-wrap: wrap;
 }
 .activite-list img:hover{
     transform: scale(1.1);
-
 }
-
 .activite-list .column article {
     height: 100%;
     box-shadow: 0px 0px 10px 0px #E0E0E0;
     border-radius: 25px;
 }
-
 .activite-list .column article h3 {
     padding: 21px;
     margin: 0px;
 }
-
 .activite-list .column.double article {
     height: 48%;
 }
-
-
 /************************************
 *              Footer               *
 ************************************/
-
 footer {
     background-color: #f2f2f2;
     margin: 0px -50px;
     padding: 50px;
     display: flex;
 }
-
 footer .column {
     width: 30%;
 }
-
 footer .column ul {
     padding: 0px;
     list-style-type: none;
 }
-
 footer .column ul li a {
     color: black;
     text-decoration: none;
