@@ -1,0 +1,50 @@
+ /************************************
+*            MEDIA -BREAKPOINTS            *
+************************************/
+@media (max-width:992px){
+    .apartements-liste{
+        flex-direction: column;
+    }
+    .populaires
+    {
+        order: -1;
+        flex-direction: row;
+        background-color: #0065FC;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .subnav{
+        margin-top: 6px;
+        font-weight: bold;
+        font-size: 8.4px;
+        background-color: #0065FC;
+        color: white;
+    }          
+    .filtresliste {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+}
+
+@media(max-width:768px){
+    .city-apartements-liste{
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+    }
+    .activite-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .filtresliste{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:767px){
+
+}
