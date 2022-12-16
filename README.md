@@ -52,7 +52,9 @@ Spécifications techniques
 
 Compétences évaluées
 
+
 ●Intégrer du contenu conformément à une maquette
+
 ●Implémenter une interface responsive
 
 
