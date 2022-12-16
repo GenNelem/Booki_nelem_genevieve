@@ -28,6 +28,9 @@
         align-items: flex-start;
     
     }
+    .activite .column .img{
+        
+    }
 }
 
 @media(max-width:768px){
