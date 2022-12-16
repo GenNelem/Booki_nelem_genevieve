@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800;900&display=swap');
 /*wildcard*/
 *{
@@ -54,8 +55,7 @@ nav a:hover
     margin-left: 0px;
     padding: 30px;
     width: 100%;
-    max-width: 1000px;
-    
+    max-width: 1000px;  
 }
 .searchbar
 {
@@ -64,7 +64,6 @@ nav a:hover
     max-width: 1000px;
     display: flex;
 }
-
 .searchbar i{
     padding: 1rem 2rem;
     background-color: lightgrey;
@@ -206,7 +205,7 @@ flex-wrap: wrap;
     border-radius: 16px;
     padding: 8px;
     box-shadow: 0 0 10px;
-    flex-grow: 1;
+    flex-grow: 1;   
 }
 .appartements-card:hover{
     transform: scale(1.1);
@@ -219,13 +218,25 @@ flex-wrap: wrap;
     object-position: top;
 }
 .appartements-card p{
-    margin: 3.2px;
+    margin: 3px;
+    margin-top: 10px;
 }
+.appartements-card .nomhotel1{
+    color: black;
+}
+
 /**POPULAIRES **/
 
    .populaires{
     background-color: #f2f2f2;
     margin-left: 50px;
+   }
+   .populaires a{
+    text-decoration: none;
+    color: black;
+   }
+   .populaires {
+    margin-bottom: 0px;
    }
    .apartements-liste .populaires-flex
     {display: flex;
@@ -267,61 +278,10 @@ flex-wrap: wrap;
     margin-top: 25px;
     margin-bottom: 0;
     } 
-    .populaires .toptextpop {
-        display: flex
-       
+    .toptextpop h3{
+      display: inline-flex;
+      margin-right: 320px;
     }
-    
-    /************************************
-*            MEDIA -BREAKPOINTS            *
-************************************/
-@media (max-width:992px){
-    .apartements-liste{
-        flex-direction: column;
-    }
-    .populaires
-    {
-        order: -1;
-        flex-direction: row;
-        background-color: #0065FC;
-    }
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
-    .subnav{
-        margin-top: 6px;
-        font-weight: bold;
-        font-size: 8.4px;
-        background-color: #0065FC;
-        color: white;
-    }          
-    .filtresliste {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    
-    }
-}
-
-@media(max-width:768px){
-    .city-apartements-liste{
-        display: flex;
-        flex-direction: column;
-        background-color: pink;
-    }
-    .activite-list{
-        display: flex;
-        flex-direction: column;
-    }
-    .filtresliste{
-        flex-direction: column;
-    }
-}
-
-@media (max-width:767px){
-
-}
 
 /************************************
 *            Activités              *
@@ -341,7 +301,7 @@ flex-wrap: wrap;
     margin: 0 32px 0 32px;
 }
 .activite-list .column {
-    width: 23%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -390,4 +350,3 @@ footer .column ul li a {
     text-decoration: none;
     line-height: 35px;
 }
-
