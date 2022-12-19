@@ -13,6 +13,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin:0
 }
  /*******************
 *** Styles header **
@@ -294,6 +295,7 @@ flex-wrap: wrap;
     margin-left: 32px;
     margin-top: 48px;
 }
+
 .activite-list {
     display: flex;
     justify-content: space-between;
@@ -333,7 +335,6 @@ flex-wrap: wrap;
 ************************************/
 footer {
     background-color: #f2f2f2;
-    margin: 0px -50px;
     padding: 50px;
     display: flex;
     justify-content: center;
