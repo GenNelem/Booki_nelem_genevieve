@@ -13,6 +13,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin:0
 }
  /*******************
 *** Styles header **
@@ -129,8 +130,7 @@ margin: -3px;
 
 .filtresliste{
     display: flex;
-    align-items: center;
-    gap: 16px;
+    
     flex-wrap: wrap;
     margin-left: 30px;
 }
@@ -139,6 +139,7 @@ margin: -3px;
     border: 2px solid lightgrey;
     border-radius: 32px; 
     transition: all 200ms ease-in-out;
+    margin-left: 30px;
 }
 .filtres:hover{
     background-color: #F3F8FF;
@@ -147,7 +148,8 @@ margin: -3px;
 .filtres1
 {
     display: flex;
-    gap: 48px;
+    justify-content: space-between;
+    width: 60%;
     align-items: center;
 }
 .logements{
@@ -294,6 +296,7 @@ flex-wrap: wrap;
     margin-left: 32px;
     margin-top: 48px;
 }
+
 .activite-list {
     display: flex;
     justify-content: space-between;
@@ -333,7 +336,6 @@ flex-wrap: wrap;
 ************************************/
 footer {
     background-color: #f2f2f2;
-    margin: 0px -50px;
     padding: 50px;
     display: flex;
     justify-content: center;
