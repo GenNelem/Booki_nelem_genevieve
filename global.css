@@ -1,7 +1,21 @@
  /************************************
 *            MEDIA -BREAKPOINTS            *
 ************************************/
-@media (max-width:992px){
+@media screen and (min-width: 641px) and (max-width: 900px) 
+{
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .logo{
+        margin-bottom: 75px;
+    }
+   
+    .filtresliste {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .apartements-liste{
         flex-direction: column;
     }
@@ -10,46 +24,151 @@
         order: -1;
         flex-direction: row;
         background-color: #0065FC;
+        margin-left: 0;
+        margin-bottom: 30px;
+    } 
+
+    .activite-list{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height:100%;
+    }
+    .activite-list .column article  {
+        height: 100%;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 800px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    .activite-list .column.double article  {
+        height: 100%;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 800px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) 
+{
+    .header .logo{
+    margin-bottom: 70px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.filtresliste{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.filtres1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 0;
+    gap: 30px;
+    align-items: flex-start;
+}
+.apartements-liste{
+    flex-direction: column;
+}
+.populaires
+{
+    order: -1;
+    flex-direction: row;
+    background-color: red;
+    margin-left: 0;
+    margin-bottom: 30px;
+} 
+.activite-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+}
+.activite-list .column article  {
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 550px;
+    height: 350px;
+    margin-bottom: 30px;
+
+}
+.activite-list .column.double article {
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 550px;
+    height: 350px;
+  
+}
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 573px){
+    .header .logo{
+        margin-bottom: 45px;
     }
     .header{
         display: flex;
         flex-direction: column;
     }
-    .subnav{
-        margin-top: 6px;
-        font-weight: bold;
-        font-size: 8.4px;
-        background-color: #0065FC;
-        color: white;
-    }          
-    .filtresliste {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    
-    }
-    .activite-list{
-        flex-wrap: wrap;
-        
-        
-    }
-}
-
-@media(max-width:768px){
-    .city-apartements-liste{
-        display: flex;
-        flex-direction: column;
-        background-color: pink;
-    }
-    .activite-list img{
-        flex-wrap: wrap;
-    }
+  
     .filtresliste{
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    .filtres1{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 0;
+        gap: 30px;
+        align-items: flex-start;
+    }
+    .apartements-liste{
         flex-direction: column;
     }
+    .populaires
+    {
+        order: -1;
+        flex-direction: row;
+        background-color:pink;
+        margin-left: 0;
+        margin-bottom: 30px;
+    } 
+    .activite-list{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height:100%;
+    }
+    .activite-list .column article  {
+        height: 100%;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 450px;
+        height: 350px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .activite-list .column.double article  {
+        height: 100%;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 450px;
+        height: 350px;
+        flex-wrap: wrap;
+    } 
+    .footer .column{
+        margin-right: 30px;
+    }
+
 }
 
-@media (max-width:767px){
-
-}
