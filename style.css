@@ -26,10 +26,11 @@ nav{
     flex-wrap: wrap;  
 }
 nav a{
-    padding: 32px;
+    
     text-decoration: none;
     font-size: 30px;
-    margin-right: 50px;
+    margin: 0 50px 32px 50px ;
+
 }
 nav a:hover
 {
@@ -53,10 +54,9 @@ nav a:hover
 }
 .searchcontainer
 {
-    margin-left: 0px;
     padding: 30px;
     width: 100%;
-    max-width: 1000px;  
+    max-width: 1000px;
 }
 .searchbar
 {
@@ -71,7 +71,7 @@ nav a:hover
     border-radius: 16px 0 0 16px;
 }
 .searchbar input{
-    padding-right: 3rem;
+
 }
 .searchbar button{
     background-color:#0065fc;
@@ -226,19 +226,17 @@ flex-wrap: wrap;
 .appartements-card .nomhotel1{
     color: black;
 }
-
-/**POPULAIRES **/
+/*******************
+*** POPULAIRES **
+********************/
 
    .populaires{
     background-color: #f2f2f2;
-    margin-left: 50px;
+    margin: 0 16px 0 50px;
    }
    .populaires a{
     text-decoration: none;
     color: black;
-   }
-   .populaires {
-    margin-bottom: 0px;
    }
    .apartements-liste .populaires-flex
     {display: flex;
@@ -280,10 +278,12 @@ flex-wrap: wrap;
     margin-top: 25px;
     margin-bottom: 0;
     } 
-    .toptextpop h3{
-      display: inline-flex;
-      margin-right: 320px;
+    .toptextpop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+    
 
 /************************************
 *            Activités              *
@@ -340,6 +340,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 footer .column {
     width: 30%;
 }
