@@ -1,6 +1,7 @@
-@media (min-width: 200px) and (max-width:844px){
+@media (min-width: 230px) and (max-width:1000px){
    body{
     align-items: center;
+    font-size: 12px;
    }
     .header .logo
     {
@@ -49,6 +50,9 @@ flex-direction: column;
    max-width: 47%;
 }
 .activite-list{
+    display: flex;
     flex-direction: column;
+    
 }
+
 }

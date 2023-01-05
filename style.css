@@ -70,9 +70,7 @@ nav a:hover
     background-color: lightgrey;
     border-radius: 16px 0 0 16px;
 }
-.searchbar input{
 
-}
 .searchbar button{
     background-color:#0065fc;
     border-radius: 0rem 16px 16px 0;
@@ -130,7 +128,6 @@ margin: -3px;
 
 .filtresliste{
     display: flex;
-    
     flex-wrap: wrap;
     margin-left: 30px;
 }
@@ -290,7 +287,6 @@ flex-wrap: wrap;
 ************************************/
 .activite {
     margin-bottom: 60px;
-    ;
 }
 .activite h2{
     margin-left: 32px;
@@ -300,7 +296,6 @@ flex-wrap: wrap;
 .activite-list {
     display: flex;
     justify-content: space-between;
-    height: 600px;
     margin: 0 32px 0 32px;
 }
 .activite-list .column {
@@ -310,27 +305,33 @@ flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 25px;
 }
-.activite-list .column article img {
+.activite-list .article img {
     width: 100%;
-    height: calc(100% - 67px);
+    height: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 .activite-list img:hover{
     transform: scale(1.1);
 }
-.activite-list .column article {
+.activite-list .article {
     height: 100%;
-    box-shadow: 0px 0px 10px 0px lightgray;
+    box-shadow: 0px 0px 10px 0px royalblue;
     border-radius: 25px;
 }
-.activite-list .column article h3 {
+.activite-list .article h3 {
     padding: 21px;
     margin: 0px;
 }
-.activite-list .column.double article {
-    height: 48%;
+
+.activite-list .column.double .article {
+    height: 45%;
 }
+.activite-list .column.big img{
+    height: 550px;
+} 
+
+
 /************************************
 *              Footer               *
 ************************************/
