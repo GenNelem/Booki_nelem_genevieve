@@ -1,4 +1,4 @@
-@media (min-width: 230px) and (max-width:1000px){
+@media (min-width: 230px) and (max-width:768px){
    body{
     align-items: center;
     font-size: 12px;
@@ -14,15 +14,14 @@
 .filtres1{
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
+
 }
-.filtres{
-    display: flex;
-}
-.apartements-liste{
-    display: flex;
-    flex-direction: column;
-}
+.searchbar input{
+    max-width: 43%;
+ }
+ .searchbar button{
+    padding: 5px;
+ }
 .populaires
 {
     order: -1;
@@ -31,6 +30,7 @@
 } 
 .popular-appartements-card img{
     border-radius: 16px 16px 0 0;
+    width: 100%;
 
 }
 .popular-appartements-card{
@@ -43,16 +43,54 @@
 .populaires-description .stars{
     margin:0 0 16px 0;
 }
+.apartements-liste{
+    display: flex;
+    flex-direction: column;
+}
 .city-apartements-liste{
 flex-direction: column;
 }
-.searchbar input{
-   max-width: 47%;
-}
+
 .activite-list{
     display: flex;
     flex-direction: column;
-    
+}
+.activite-list .article{
+    width: 100%;
+}
+.activite-list .column{
+    width: 80%; 
+    margin: 16px;
+}
+.activite-list .column.big{
+ 
+}
+footer{
+    flex-direction: column;
+    width: 100%;  
+}
+footer .column{
+    width: 100%;
+    align-items: center;
+}
 }
 
-}
+
+@media (min-width: 769px) and (max-width:1080px)
+  {  .populaires
+    {
+        order: -1;
+        flex-direction: row;
+        margin: 0 0 16px 0;
+    } 
+    .city-apartements-liste{
+        flex-direction: row;
+        }
+        .activite-list .column.big{
+            width: 100%;
+            margin-right: 16px;
+        }
+
+
+            /***NEED  TO WORK ON SIZE OF .ACTIVITE .COLUUMN.DOUBLE IMG***/
+    }

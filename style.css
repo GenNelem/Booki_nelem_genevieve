@@ -307,31 +307,24 @@ flex-wrap: wrap;
 }
 .activite-list .article img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 .activite-list img:hover{
     transform: scale(1.1);
 }
-.activite-list .article {
-    height: 100%;
-    box-shadow: 0px 0px 10px 0px royalblue;
+.activite-list .article  {
+    box-shadow: 0 0 16px 0  black;
     border-radius: 25px;
 }
-.activite-list .article h3 {
+.activite-list .article p {
     padding: 21px;
-    margin: 0px;
+    margin: 0;
 }
 
-.activite-list .column.double .article {
-    height: 45%;
-}
 .activite-list .column.big img{
     height: 550px;
 } 
-
-
 /************************************
 *              Footer               *
 ************************************/
@@ -340,6 +333,7 @@ footer {
     padding: 50px;
     display: flex;
     justify-content: center;
+    flex-direction:row;
 }
 
 footer .column {
