@@ -92,7 +92,7 @@ nav a:hover
 .fa-solid.fa-money-bill-wave{
 color: blue;
 background-color: #DEEBFF;
-padding: 16px;
+padding: 9px;
 border-radius: 50%;
 margin: -3px;
 }
@@ -100,7 +100,7 @@ margin: -3px;
 .fa-solid.fa-child-reaching{
 color: blue;
 background-color: #DEEBFF;
-padding: 16px;
+padding: 9px;
 border-radius: 50%;
 margin: -3px;
 }
@@ -108,7 +108,7 @@ margin: -3px;
 .fa-solid.fa-heart{
     color: blue;
     background-color: #DEEBFF;
-    padding: 16px;
+    padding: 9px;
     border-radius: 50%;
     margin: -3px;
 }
@@ -116,7 +116,7 @@ margin: -3px;
 .fa-solid.fa-dog{ 
     color:blue;
     background-color: #DEEBFF;
-    padding: 16px;
+    padding: 9px;
     border-radius: 50%;
     margin: -3px;
 }
@@ -186,7 +186,7 @@ flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 32px;
     justify-content: space-around;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
 }
@@ -295,36 +295,51 @@ flex-wrap: wrap;
 
 .activite-list {
     display: flex;
-    justify-content: space-between;
-    margin: 0 32px 0 32px;
-}
-.activite-list .column {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 25px;
-}
-.activite-list .article img {
+    height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
+    justify-content: space-between;
+    padding: 16px;
+  
 }
 .activite-list img:hover{
     transform: scale(1.1);
 }
-.activite-list .article  {
-    box-shadow: 0 0 16px 0  black;
+.activite-list .column {
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
+    margin: 16px;
 }
-.activite-list .article p {
-    padding: 21px;
-    margin: 0;
+.activite-list .article img {
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
 }
 
+.activite-list .article  {
+    box-shadow: 0 0 16px 0  gray;
+    border-radius: 25px;
+    margin-bottom: 16px;
+}
+.activite-list .article p {
+padding: 10px;
+margin: 3px;
+}
 .activite-list .column.big img{
-    height: 550px;
+    height: 645px;
 } 
+.activite-list .column.big{
+    height: 700px;
+    width: 400px;
+}
+.activite-list .column.double{
+    height: 700px;
+    gap: 4px;
+}
+.activite-list .column.double img{
+    height: 300px;
+    width: 100%;
+}
+
 /************************************
 *              Footer               *
 ************************************/
@@ -335,7 +350,6 @@ footer {
     justify-content: center;
     flex-direction:row;
 }
-
 footer .column {
     width: 30%;
 }
